@@ -1,0 +1,126 @@
+/* RESET DE ESTILO */
+* { 
+    margin: 0; /* Remove margens padrão de todos os elementos */
+    padding: 0; /* Remove preenchimentos padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui bordas e margens no cálculo total do tamanho */
+}
+
+/* IMPORTAÇÃO DE FONTE PERSONALIZADA */
+@font-face {
+    font-family: "fonteH";
+    src: url("Gadnesh\ Meteora.otf") format("truetype"); /* Certifique-se de que o caminho está correto */
+}
+
+/* ANIMAÇÃO DE ESCRITA */
+@keyframes write {
+    0% {
+        width: 0; /* Começa com largura zero, simula escrita */
+    }
+}
+
+body { 
+    background-color: #1C1C1C; /* Cor de fundo escura para alto contraste */
+    height: 100vh; /* Define a altura total como o tamanho da janela */
+}
+
+.principal { 
+    width: 718px; /* Limita a largura máxima do conteúdo */
+    margin-left: auto;
+    margin-right: auto; /* Alinha o conteúdo centralizando horizontalmente */
+}
+
+.flex {
+    display: flex; /* Cria layout flexível */
+}
+
+main {
+    margin: 0px 120px; /* Adiciona margem horizontal em torno do conteúdo */
+}
+
+/* ESTILOS DO CABEÇALHO */
+header {  
+    padding: 90px 4%; /* Adiciona espaçamento interno no cabeçalho */
+}
+
+header >.principal { 
+    display: flex; /* Organiza os elementos do cabeçalho em linha */
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: space-between; /* Distribui os elementos com espaço entre eles */
+}
+
+header a { 
+    color: rgb(102, 102, 102); /* Define cor neutra para os links */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    cursor: pointer; /* Define o cursor como pointer ao passar o mouse */
+    display: inline-block; /* Garante que os links respeitem margens e preenchimentos */
+}
+
+header a:hover { 
+    color: rgb(255, 172, 49); /* Altera a cor dos links ao passar o mouse */
+    transform: scale(1.04); /* Aplica um efeito de leve aumento */
+    transition: color 0.2s ease; /* Transição suave para a mudança de cor */
+}
+
+header nav ul { 
+    list-style-type: none; /* Remove os marcadores das listas */
+}
+
+header nav ul li { 
+    font-size: 40px;
+    display: inline-flex; /* Exibe os itens da lista lado a lado */
+    padding: 10px; /* Adiciona espaçamento interno nos itens */
+    
+}
+
+
+/* ESTILO DA SEÇÃO PRINCIPAL */
+section.topo-do-site {
+    padding: 10px 1%; /* Adiciona espaçamento interno */
+}
+
+.interface .flex {
+    align-items: center; /* Alinha verticalmente os itens */
+    gap: 30px; /* Adiciona espaço entre os itens */
+}
+
+/* SEÇÃO SOBRE */
+section.sobre {
+    padding: 10px 1%; /* Espaçamento interno */
+}
+
+.interface .flex {
+    align-items: center; /* Alinha verticalmente os itens */
+}
+
+/* ESTILO DO TÍTULO DA SEÇÃO "SOBRE" */
+.txt-sobre h2 {
+    padding: 10px 19px; /* Adiciona espaçamento ao redor do título */
+    font-family: "fonteH"; /* Fonte personalizada para o título */
+    color: white; /* Cor branca para contraste com o fundo */
+    font-size: 70px; /* Define o tamanho da fonte do título */
+    white-space: nowrap; /* Impede quebra de linha no título */
+    overflow: hidden; /* Esconde texto que ultrapassar a largura definida */
+    width: 30ch; /* Define a largura com base no número de caracteres */
+    animation: write 0.8s steps(20, end); /* Aplica animação de escrita ao título */
+}
+h2:before {
+    content: " "; /* Adiciona uma linha decorativa antes do título */
+    width: 1100px; /* Largura da linha */
+    height: 3px; /* Espessura da linha */
+    background: rgb(206, 145, 53); /* Cor da linha decorativa */
+    position: absolute; /* Retira a linha do fluxo padrão */
+    top: 43.5%; /* Ajusta a posição vertical da linha */
+}
+
+
+h2 span {
+    color: rgb(255, 153, 0); /* Define uma cor destacada para o texto em span */
+}
+
+.txt-sobre {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Fonte legível e moderna */
+    color: white; /* Cor branca para facilitar a leitura */
+    font-size: 40px; /* Tamanho do texto pequeno e claro */
+    text-align: 30px; /* Justifica o texto para uma aparência profissional */
+    line-height: 50px; /* Define espaçamento entre as linhas para melhorar a legibilidade */
+}
